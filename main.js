@@ -17,3 +17,7 @@ if (submitName.addEventListener){
         console.log('something');
     })
 }
+
+const numGenerator = () => {
+    return Math.round(Math.random()*3);
+};
