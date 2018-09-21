@@ -21,3 +21,7 @@ if (submitName.addEventListener){
 const numGenerator = () => {
     return Math.round(Math.random()*3);
 };
+
+const houseSelector = () => {
+    return separateButEqual[numGenerator()];
+};
