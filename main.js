@@ -36,7 +36,7 @@ submitName.addEventListener("click", (e) => {
         </div>`;
     if (fValue && lValue !== ''){
         printToDom('sorted-pupils',newString);
-        fValue.value = null;
-        lValue.value = null;
+        fName.value = null;
+        lName.value = null;
     }
 })
