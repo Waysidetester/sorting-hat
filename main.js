@@ -26,16 +26,20 @@ submitName.addEventListener("click", (e) => {
     fValue = fName.value;
     lValue = lName.value;
     let newString = ``;
-    newString += `  <div class="card w-50">
-            <div class="card-body">
+    newString += `  <div class="card card-width border border-dark">
+            <div class="card-body d-flex flex-column align-items-center">
                 <h5 class="card-title">${fValue} ${lValue}</h5>
                 <p class="card-text">${houseSelector()}</p>
-                <a href="#" class="btn btn-primary expel-this">Expel</a>
+                <a href="#" class="btn btn-danger expel-this">Expel</a>
             </div>
         </div>`;
     // Prevents card generation if a field is left blank
     if (fValue && lValue !== ''){
         printToDom('sorted-pupils',newString);
+        const houseClass = document.getElementsByClassName('card-text');
+        for (i = 0; i < houseClass.length; i++) {
+            houseClass[i].parentNode.parentNode.classList.add(`${houseClass[i].innerHTML}`)
+        }
         fName.value = null;
         lName.value = null;
         fName.focus();
