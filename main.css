@@ -1,0 +1,30 @@
+
+@media (min-width: 575.98px){
+    .card-width {
+        width: 30%;
+        margin: 3px;
+    }
+}
+
+@media (max-width: 575px) {
+    .card-width {
+        width: 100%;
+        margin: 3px;
+    }
+}
+
+.Gryffindor {
+    background-color: #ff5969;
+}
+
+.Hufflepuff {
+    background-color: #ffc542;
+}
+
+.Ravenclaw {
+    background-color: #bf42ff;
+}
+
+.Slytherin {
+    background-color: #00a43a;
+}
